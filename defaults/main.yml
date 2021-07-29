@@ -1,2 +1,7 @@
 ---
-# defaults file for print-nanny-ansible-role
+# defaults file for ansible-role-print-nanny
+
+printnanny_group: printnanny
+printnanny_user: printnanny
+printnanny_cli_version: 0.1
+printnanny_video_device: /dev/video0
