@@ -5,7 +5,7 @@ VENV ?= .venv
 $(VENV):
 	python3 -m venv $(VENV)
 	$(VENV)/bin/pip install --upgrade pip setuptools wheel pip-tools
-	$(VENV)/bin/pip install -r molecule/requirements.txt
+	$(VENV)/bin/pip install -r requirements.txt
 
 setup: $(VENV)
 
