@@ -1,0 +1,13 @@
+[Unit]
+Description=Print Nanny Webcam Stream
+Requires=network.target
+After=syslog.target network.target
+[Service]
+Type=forking
+EnvironmentFile=/etc/environment.d/printnanny
+ExecStart=/usr/local/bin/webcam-start
+ExecStop=/usr/local/bin/webcam-drain
+User={{ printnanny_user }}
+
+[Install]
+WantedBy=multi-user.target

@@ -1,2 +1,13 @@
 ---
 # tasks file for ansible-role-print-nanny
+
+- include_role:
+    name: leigh_johnson.janus_gateway
+  tags:
+    - janus_gateway
+    - print_nanny
+    
+- import_tasks: gstreamer.yml
+  tags:
+    - gstreamer
+    - print_nanny

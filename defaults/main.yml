@@ -1,2 +1,11 @@
 ---
 # defaults file for ansible-role-print-nanny
+
+printnanny_user: printnanny
+printnanny_group: printnanny
+
+gstreamer_num_buffers: 1
+gstreamer_config_interval: 1
+gstreamer_video_src: 'v4l2src'
+janus_gateway_host: 127.0.0.1
+janus_gateway_videoport: 5004
