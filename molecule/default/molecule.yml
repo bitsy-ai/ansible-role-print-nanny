@@ -4,18 +4,25 @@ dependency:
 driver:
   name: docker
 platforms:
-  - name: debian12
+  - name: debian10
     image: debian:buster
-    pre_build_image: true
+
 provisioner:
   name: ansible
   log: true
-verifier:
-  name: ansible
+  config_options:
+    defaults:
+      gathering: smart
+      fact_caching: jsonfile
+      fact_caching_timeout: 7200
+
 lint: |
   set -e
   yamllint .
-  ansible-lint
+  ansible-lint  
+verifier:
+  name: ansible
+  
 scenario:
   name: default
   test_sequence:
