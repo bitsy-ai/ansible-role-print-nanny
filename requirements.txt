@@ -58,6 +58,8 @@ distlib==0.3.2
     # via virtualenv
 distro==1.6.0
     # via selinux
+docker==5.0.0
+    # via molecule-docker
 enrich==1.2.6
     # via
     #   ansible-lint
@@ -84,8 +86,12 @@ markupsafe==2.0.1
     # via jinja2
 mccabe==0.6.1
     # via flake8
-molecule[ansible,gidocker,lint]==3.3.4
-    # via -r requirements.in
+molecule[ansible,docker,lint]==3.3.4
+    # via
+    #   -r requirements.in
+    #   molecule-docker
+molecule-docker==0.2.4
+    # via molecule
 nodeenv==1.6.0
     # via pre-commit
 packaging==21.0
@@ -129,7 +135,9 @@ pyyaml==5.4.1
     #   pre-commit
     #   yamllint
 requests==2.26.0
-    # via cookiecutter
+    # via
+    #   cookiecutter
+    #   docker
 resolvelib==0.5.4
     # via ansible-core
 rich==10.6.0
@@ -142,7 +150,9 @@ ruamel.yaml==0.17.10
 ruamel.yaml.clib==0.2.6
     # via ruamel.yaml
 selinux==0.2.1
-    # via molecule
+    # via
+    #   molecule
+    #   molecule-docker
 six==1.16.0
     # via
     #   bcrypt
@@ -164,6 +174,8 @@ virtualenv==20.7.0
     # via pre-commit
 wcmatch==8.2
     # via ansible-lint
+websocket-client==1.1.0
+    # via docker
 yamllint==1.26.1
     # via molecule
 
