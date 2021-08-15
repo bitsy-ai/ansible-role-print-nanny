@@ -1,8 +1,7 @@
 ---
 # tasks file for ansible-role-print-nanny
-
 - include_role:
-    name: leigh_johnson.janus_gateway
+    name: bitsy.janus_gateway
   tags:
     - janus_gateway
     - print_nanny
