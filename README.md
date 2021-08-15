@@ -7,7 +7,7 @@ Requirements
 ------------
 
 ```bash
-$ ansible-galaxy install leigh_johnson.janus_gateway
+$ ansible-galaxy install bitsyai.janus_gateway
 ```
 
 Role Variables

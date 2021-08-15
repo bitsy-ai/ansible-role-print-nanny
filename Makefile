@@ -1,4 +1,6 @@
 VENV ?= .venv
+TMP_DIR ?= $(HOME)/.tmp
+
 
 .PHONY: setup
 

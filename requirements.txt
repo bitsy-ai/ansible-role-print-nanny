@@ -82,6 +82,12 @@ jinja2==3.0.1
     #   molecule
 jinja2-time==0.2.0
     # via cookiecutter
+jmespath==0.10.0
+    # via molecule-libvirt
+libvirt-python==7.6.0
+    # via -r requirements.in
+lxml==4.6.3
+    # via molecule-libvirt
 markupsafe==2.0.1
     # via jinja2
 mccabe==0.6.1
@@ -90,8 +96,13 @@ molecule[ansible,docker,lint]==3.3.4
     # via
     #   -r requirements.in
     #   molecule-docker
+    #   molecule-libvirt
 molecule-docker==0.2.4
     # via molecule
+molecule-libvirt==0.0.4
+    # via -r requirements.in
+netaddr==0.8.0
+    # via molecule-libvirt
 nodeenv==1.6.0
     # via pre-commit
 packaging==21.0
@@ -132,6 +143,7 @@ pyyaml==5.4.1
     #   ansible-core
     #   ansible-lint
     #   molecule
+    #   molecule-libvirt
     #   pre-commit
     #   yamllint
 requests==2.26.0
